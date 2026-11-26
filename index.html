@@ -15,7 +15,8 @@ a{color:#FFD7A8}a:hover{color:#ffffff}
 .band{writing-mode:vertical-rl;text-orientation:mixed}
 .band-l{transform:rotate(180deg)}
 input::placeholder{color:#7A8A8B}
-@media (max-width:700px){.side{width:34px !important}.side span{font-size:20px !important}.signup-row{flex-direction:column}}
+@media (max-width:1000px){.card-wrap{margin-top:-60px !important}}
+@media (max-width:700px){.side{width:26px !important}.side span{font-size:16px !important;letter-spacing:3px !important}.signup-row{flex-direction:column}.hdr{margin:8px 8px 0 !important;padding:6px 8px 6px 12px !important;gap:8px !important;flex-wrap:nowrap !important}.hdr svg{width:22px;height:22px}.hdr-name{font-size:14px !important;letter-spacing:1px !important}.hdr-btn{font-size:12px !important;padding:8px 12px !important;white-space:nowrap}.card-wrap{margin-top:16px !important;padding:0 10px !important}.card{padding:26px 18px 30px !important;border-radius:18px !important}.signup{padding:32px 10px 48px !important}.signup-card{padding:28px 18px !important;border-radius:18px !important}footer{padding:20px 16px !important}}
 </style>
 <style>html{scroll-behavior:smooth}</style>
 </head>
@@ -40,19 +41,19 @@ input::placeholder{color:#7A8A8B}
     <!-- Hero: full photo background -->
     <section style="position: relative; display: flex; flex-direction: column">
       <div class="hero2" role="img" aria-label="Tropical island with a surf van, a beach hut, palm trees and the word Summer sculpted in sand, surrounded by ocean" style="position: relative; aspect-ratio: 1419 / 1109; display: flex; flex-direction: column">
-        <header style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin: 20px 24px 0; padding: 14px 22px; border-radius: 999px; background: rgba(255,255,255,0.9)">
+        <header class="hdr" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin: 20px 24px 0; padding: 14px 22px; border-radius: 999px; background: rgba(255,255,255,0.9)">
           <div style="display: flex; align-items: center; gap: 12px">
             <svg width="32" height="32" viewBox="0 0 36 36" fill="none" stroke="#10282A" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="18" cy="18" r="7"></circle><path d="M18 3v4M18 29v4M3 18h4M29 18h4M7.4 7.4l2.8 2.8M25.8 25.8l2.8 2.8M7.4 28.6l2.8-2.8M25.8 10.2l2.8-2.8"></path></svg>
-            <span style="font-family: Anton, Impact, sans-serif; font-size: 22px; letter-spacing: 2px; color: #10282A">FLA SUMMER PROMOTIONS</span>
+            <span style="font-family: Anton, Impact, sans-serif; font-size: 22px; letter-spacing: 2px; color: #10282A" class="hdr-name">FLA SUMMER PROMOTIONS</span>
           </div>
-          <a href="#signup" style="font-weight: 700; font-size: 15px; color: #FFFFFF; background: #10282A; padding: 12px 22px; border-radius: 999px; text-decoration: none">Get Early Access</a>
+          <a href="#signup" class="hdr-btn" style="font-weight: 700; font-size: 15px; color: #FFFFFF; background: #10282A; padding: 12px 22px; border-radius: 999px; text-decoration: none">Get Early Access</a>
         </header>
       </div>
     </section>
 
     <div class="ocean" style="display: flex; flex-direction: column">
-      <div style="position: relative; z-index: 1; display: flex; justify-content: center; padding: 0 24px; margin-top: -150px">
-        <div style="width: 100%; max-width: 860px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; padding: 40px 40px 44px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 24px 60px rgba(4,60,100,0.3)">
+      <div class="card-wrap" style="position: relative; z-index: 1; display: flex; justify-content: center; padding: 0 24px; margin-top: -150px">
+        <div class="card" style="width: 100%; max-width: 860px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; padding: 40px 40px 44px; border-radius: 24px; background: #FFFFFF; box-shadow: 0 24px 60px rgba(4,60,100,0.3)">
           <span style="font-size: 14px; font-weight: 700; letter-spacing: 3px; color: #0B5F8A">WWW.FLASUMMER.COM</span>
           <h1 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; color: #10282A">Something bright is on the way.</h1>
           <p style="margin: 0; font-size: 19px; line-height: 1.5; color: #2F4547; max-width: 600px">Fla Summer Promotions is getting ready to launch. Our new website is almost here — sign up below to be the first to know when we go live.</p>
@@ -61,8 +62,8 @@ input::placeholder{color:#7A8A8B}
       </div>
 
     <!-- Sign Up -->
-    <section id="signup" style="padding: 72px 24px 96px; display: flex; flex-direction: column; align-items: center">
-      <div style="width: 100%; max-width: 760px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; padding: 44px 40px; border-radius: 24px; background: rgba(255,255,255,0.94); box-shadow: 0 24px 60px rgba(4,60,100,0.3)">
+    <section id="signup" class="signup" style="padding: 72px 24px 96px; display: flex; flex-direction: column; align-items: center">
+      <div class="signup-card" style="width: 100%; max-width: 760px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; padding: 44px 40px; border-radius: 24px; background: rgba(255,255,255,0.94); box-shadow: 0 24px 60px rgba(4,60,100,0.3)">
       <span style="font-size: 14px; font-weight: 700; letter-spacing: 3px; color: #C2410C">SIGN UP</span>
       <h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(40px, 5vw, 64px); line-height: 1; color: #10282A">Be the first to know.</h2>
       <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #2F4547; max-width: 560px">Join the list and we'll let you know the moment Fla Summer Promotions launches.</p>
